@@ -2,7 +2,7 @@
 from pysnmp import hlapi
 from sys import argv,exit
 
-def getStatus(host, vpn, community=hlapi.CommunityData('public'), port=161, engine=hlapi.SnmpEngine(), context=hlapi.ContextData(),):
+def getStatus(host, vpn, community=hlapi.CommunityData('public'), port=161, engine=hlapi.SnmpEngine(), context=hlapi.ContextData()):
     
     identityNamePhaseTwo=hlapi.ObjectIdentity('SNMPv2-SMI','enterprises','12356.101.12.2.2.1.3')
     identityStatusPhaseOne=hlapi.ObjectIdentity('SNMPv2-SMI','enterprises','12356.101.12.2.2.1.20')
