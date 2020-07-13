@@ -34,7 +34,7 @@ def getStatus(host, vpn, community=hlapi.CommunityData('public'), port=161, engi
 
 if __name__ == "__main__":
     if len(argv) < 3:
-        print(""" !!Parâmentros incorretos!!
+        print(""" !!Parâmetros incorretos!!
 
         ./check_vpn_snmp.py host vpn
         """)
